@@ -1,0 +1,46 @@
+<!-- this is not a solved class no 24.5 -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+
+<body>
+	<h2>Some comments</h2>
+	<section id="main-container">
+		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi rerum pariatur temporibus? Minus
+			ducimus perferendis cupiditate quam voluptatum accusantium repellendus maiores obcaecati,
+			voluptas animi nesciunt, iste ut quos. Vero, facere.</p>
+		<p>Ipsa consequuntur excepturi a ad quas minima. Sunt optio ut omnis porro dignissimos minima repellat
+			recusandae dolorem numquam suscipit deserunt ad sapiente nobis quisquam quo, laboriosam id
+			accusamus quaerat illum!</p>
+		<p>Officia dolores ullam iste a atque non repudiandae repellendus amet! Molestiae repellat ipsum velit
+			ad amet! Quidem reiciendis minima dolor dignissimos earum? Id accusantium maiores odio
+			recusandae quod adipisci perspiciatis?</p>
+	</section>
+	<section>
+		<textarea name="" id="new-comments" cols="60" rows="4"></textarea>
+		<br>
+		<button id="submit-comments">post</button>
+	</section>
+	<script>
+		document.getElementById('submit-comments').addEventListener('click', function () {
+			const newComments = document.getElementById('new-comments');
+			//const useComments = newComments.value;
+
+			const newComments2 = document.createEvent('p');
+			newComments2.innerText = newComments.Value;
+
+			const commestsContainer = document.getElementById('main-container');
+			commestsContainer.appendChild(newComments2);
+		})
+	</script>
+</body>
+<!-- this is not solved -->
+
+</html>
