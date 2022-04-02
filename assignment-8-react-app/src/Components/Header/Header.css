@@ -1,0 +1,31 @@
+header{
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.header-title{
+  margin-left: 10px;
+  font-family: Monospace;
+  font-size: 20px;
+}
+samp{
+  color: #eb127a;
+}
+
+header nav a{
+  text-decoration: none;
+  color: white;
+  margin-right: 10px;
+  padding: 5px;
+}
+
+header nav a:hover{
+  font-weight: 700;
+  color: black;
+  background-image: linear-gradient(to left top, #e6ef68, #fdc042, #ff8d42, #ff555a, #eb127a);
+  border-radius: 5px;
+}

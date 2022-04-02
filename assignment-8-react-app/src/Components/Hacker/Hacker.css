@@ -1,0 +1,46 @@
+.hacker-info{
+  padding: 10px;
+  display: grid;
+  text-align: center;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.hacker-info img{
+  clip-path: circle();
+  margin: 5px;
+  width: 200px;
+  height: 200px;
+  
+}
+
+.hackers{
+  padding: 5px;
+  margin: 5px;
+  background-image: linear-gradient(to left top, #e6ef68, #fdc042, #ff8d42, #ff555a, #eb127a);
+  border-radius: 10px;
+}
+p{
+  font-weight: 600;
+}
+
+.aline{
+  margin-left: 15px;
+}
+
+.btn{
+  text-align: center;
+}
+/* cart */
+.addtocart{
+  width: 150px;
+  height: 30px;
+  cursor: pointer;
+  background-color: goldenrod;
+  border-radius: 5px;
+  border: 1px solid rgb(218, 165, 32);
+}
+
+.addtocart:hover{
+  color: white;
+  background-color: deeppink;
+}

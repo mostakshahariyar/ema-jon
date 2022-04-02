@@ -1,0 +1,32 @@
+.cart-items{
+  color: #fff;
+  text-align: center;
+}
+.cart-title{
+  font-size: larger;
+  font-family: 'Courier New', Courier, monospace;
+  font-family: 900;
+  font-style: oblique;
+
+}
+
+.cart-name{
+  color: blue;
+  font-size: 20px;
+  
+}
+
+.cart-img{
+  width: 30px;
+  height: 30px;
+}
+
+.name-img{
+  background-image: linear-gradient(to left top, #e6ef68, #fdc042, #ff8d42, #ff555a, #eb127a);
+  border-radius: 100px;
+  margin-right: 5px;
+  margin-bottom: 7px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  align-items: center;
+}
