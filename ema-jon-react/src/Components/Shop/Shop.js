@@ -7,11 +7,15 @@ import {Link} from 'react-router-dom'
 const Shop = () => {
     const [products, setProducts] = useState([]);
     const [cart, setCart] = useState([]);
+    const [displayproducts, setDisplayproducts] = useState([]);
 
     useEffect( () =>{
         fetch('./products.json')
-        .then(res=>res.json())
-        .then(data=> setProducts(data))
+            .then(res => res.json())
+            .then(data => {
+                setProducts(data)
+                setDisplayproducts(data)
+            })
     }, [])
     useEffect(() => {
         const saveCart = getStoredCart();
@@ -45,13 +49,22 @@ const Shop = () => {
         setCart(newArray)
         addToDb(product.key)
     }
+    const heandelchange = event => {
+        const searchText = event.target.value;
+        const matchProducts = products.filter(product => product.name.toLowerCase().includes(searchText.toLowerCase()));
+        setDisplayproducts(matchProducts)
+        console.log(matchProducts.length)
+    }
 
     return (
         <div>
+            <div className="search-container">
+                <input type="text" onChange={heandelchange}  placeholder='search products'/>
+            </div>
             <div className="container">
                 <div className="products-container">
                     {
-                        products.map(product=><Product
+                        displayproducts.map(product=><Product
                             key = {product.key}
                             product = {product}
                             hendelToAddCart = { hendelToAddCart}
