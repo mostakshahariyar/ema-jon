@@ -1,0 +1,18 @@
+.cart{
+    text-align: center;
+}
+
+.cart-items{
+    display: flex;
+}
+
+.orderBtn{
+    text-align: center;
+    background-color: goldenrod;
+    width: 150px;
+    height: 30px;
+    margin: 10px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    cursor: pointer;
+}

@@ -1,0 +1,9 @@
+.container{
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+}
+.products-container{
+    border-right: 2px solid lightgray;
+    margin-right: 5px;
+    margin-left: 15%;
+}
